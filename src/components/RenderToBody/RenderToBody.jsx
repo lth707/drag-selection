@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import classnames from '../../common/classnames';
 import styles from './RenderToBody.less';
 
-const cx = classnames(styles);
+const cx = classnames(styles, 'render-to-body');
 class RenderToBody extends Component {
   constructor() {
     super();
