@@ -1,0 +1,33 @@
+{
+  "name": "drag-selection",
+  "version": "0.0.1",
+  "description": "基于react的框选组件",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "lth707",
+    "email": "597653511@qq.com"
+  },
+  "repository": "git@github.com:lth707/drag-selection.git/drag-selection",
+  "scripts": {
+    "dev": "father doc dev",
+    "build": "father build",
+    "docBuild": "father doc build",
+    "docDeploy": "father doc deploy"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-cool": "^0.3.2",
+    "father": "^2.16.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash-es": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react-dom": "^16.13.1"
+  }
+}

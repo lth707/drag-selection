@@ -1,0 +1,50 @@
+---
+name: DragSelection
+route: /
+order: -1
+sidebar: true
+---
+import { range }from 'lodash-es';
+import { Playground, Props } from 'docz';
+import classnames from './common/classnames';
+import styles from './index.less';
+import DragSelection from './DragSelection';
+
+# Properties
+<Props of={DragSelection} />
+
+# DragSelection Component
+<Playground>
+    {()=>{
+        const cx = classnames(styles);
+        const nodeIds = range(1,31);
+        return (<DragSelection 
+                 onSelectionMove={({ left, top, width, height }) => {
+                    if (width > 10 && height > 10) {
+                    // 要有一定的移动量才计算框选，不然很容易误点
+                    nodeIds.forEach(nodeId => {
+                        const element = document.getElementById(nodeId);
+                        if (element) {
+                        const rect = element.getBoundingClientRect();
+                        if (
+                            left <= rect.left + rect.width &&
+                            left + width >= rect.left &&
+                            top <= rect.top + rect.height &&
+                            top + height >= rect.top
+                        ) {
+                            element.classList.add(cx('highlight'))
+                        }else{
+                            element.classList.remove(cx('highlight'))
+                        }
+                        }
+                    });
+                    }
+              }}>
+               <div className={cx('container')}>
+                  {nodeIds.map(nodeId=><div id={`${nodeId}`} className={cx('node')}>{nodeId+1}</div>)}
+               </div>
+              </DragSelection>)
+    }}
+</Playground>
+
+

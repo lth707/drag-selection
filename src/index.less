@@ -1,0 +1,28 @@
+@prefix: test-page;
+:export {
+  prefix: @prefix;
+}
+.@{prefix}- {
+  &container {
+    height: 430px;
+    overflow-y: auto;
+    background: #f5f5f5;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: repeat(auto-fill, 100px);
+    .@{prefix}-node {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      background: #e5e5e5;
+    }
+    .@{prefix}-highlight {
+      background: #a5a5a5;
+      color: #fff;
+    }
+  }
+}
