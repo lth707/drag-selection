@@ -1,4 +1,4 @@
-# drag-selection
+# [drag-selection](https://www.npmjs.com/package/drag-selection)
 
 基于react的框选组件。
 
