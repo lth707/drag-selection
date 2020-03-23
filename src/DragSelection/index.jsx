@@ -5,7 +5,7 @@ import classnames from '../common/classnames';
 import RenderToBody from '../components/RenderToBody';
 import styles from './index.less';
 
-const cx = classnames(styles);
+const cx = classnames(styles, 'drag-selection');
 class DragSelection extends Component {
   constructor() {
     super();
