@@ -60,6 +60,9 @@ npm install drag-selection
                </div>
               </DragSelection>)
 ```
+## RUN EFFECT
+![image](https://github.com/lth707/drag-selection/blob/master/run.gif)
+
 ## LICENSE
 
 MIT
