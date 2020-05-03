@@ -1,6 +1,6 @@
 {
   "name": "drag-selection",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "基于react的框选组件",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -38,5 +38,9 @@
     "drag",
     "selection"
   ],
+  "bugs": {
+    "url": "https://github.com/lth707/drag-selection/issues"
+  },
+  "homepage": "https://github.com/lth707/drag-selection#readme",
   "author": "lth707"
 }
